@@ -7,6 +7,7 @@ use Livewire\Component;
 
 class Product extends Component
 {
+
     public function addtocart($productid)
     {
         $price=MyProduct::where(['product_id'=>$productid])->pluck('product_price')->first();

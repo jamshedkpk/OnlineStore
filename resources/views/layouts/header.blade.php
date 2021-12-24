@@ -134,7 +134,7 @@ Log Out
                     </button>
                 </div>
             </div> </form>
-            @livewire('cart.qart-items')
+            @livewire('cart.cart-items')
         </div>
     </div>
 </div>

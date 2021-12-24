@@ -10,7 +10,7 @@
                     @else
                     {{$items}}
                     @endauth
-                    </span>
+</span>
                 </a>
             </div>
 </div>

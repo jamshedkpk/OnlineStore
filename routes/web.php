@@ -7,7 +7,7 @@ use App\Http\Controllers\CartController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\CatagoryController;
 use Illuminate\Support\Facades\Request;
-use App\Http\Livewire\Cart\QartItems;
+use App\Http\Livewire\Cart\CartItems;
 
 Auth::routes();
 
@@ -18,7 +18,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::resource('/',ProductController::class);
 Route::post('/product/search',[ProductController::class,'search'])->name('search');
 Route::resource('/product',ProductController::class);
-Route::get('/items',QartItems::class)->name('items');
+Route::get('/items',CartItems::class)->name('items');
 Route::resource('/cart',CartController::class);
 
 // Middleware is applied before these routes
